@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="accordion-container">
+       <div class="accordion">
+           <div class="header">
+               <span>+</span>
+               <h3>item 1</h3>
+           </div>
+           <div class="body">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim numquam eligendi hic libero? Nihil, amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim accusantium doloremque!</p>
+           </div>
+       </div>
+       <div class="accordion">
+        <div class="header">
+            <span>+</span>
+            <h3>item 2</h3>
+        </div>
+        <div class="body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim numquam eligendi hic libero? Nihil, amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim accusantium doloremque!</p>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="header">
+            <span>+</span>
+            <h3>item 3</h3>
+        </div>
+        <div class="body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim numquam eligendi hic libero? Nihil, amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim accusantium doloremque!</p>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="header">
+            <span>+</span>
+            <h3>item 4</h3>
+        </div>
+        <div class="body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim numquam eligendi hic libero? Nihil, amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim accusantium doloremque!</p>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="header">
+            <span>+</span>
+            <h3>item 5</h3>
+        </div>
+        <div class="body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim numquam eligendi hic libero? Nihil, amet consectetur adipisicing elit. Sed, porro quod. Laudantium enim accusantium doloremque!</p>
+        </div>
+    </div>
+   </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+
+
+<script>
+    $(document).ready(function(){
+        $('.header').click(function(){
+            $('.accordion .body').slideUp()
+            $(this).next('.body').slideDown()
+            $('span').text('+')
+            $(this).children('span').text('-')
+        })
+    })
+</script>
+</body>
+</html>
